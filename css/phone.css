@@ -1,0 +1,141 @@
+body .container .navbar .hamburger {
+  position: relative;
+  top: 20px;
+  margin-left: auto;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+  cursor: pointer;
+}
+
+body .container .navbar .hamburger .line {
+  height: 2.5px;
+  width: 30px;
+  background-color: #6C63FF;
+  border-radius: 3px;
+  margin: 5px 0;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+body .container .navbar .navbar-nav {
+  position: absolute;
+  top: 215px;
+  left: -100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc(100% - 100px);
+  width: 100%;
+  background-color: #6C63FF;
+  z-index: 2;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+body .container .navbar .navbar-nav .nav-ul {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .navbar .navbar-nav .nav-ul .nav-item {
+  height: auto;
+  width: 100%;
+  padding: 0;
+  -webkit-transition: all ease .1s;
+  transition: all ease .1s;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+  cursor: pointer;
+  background-color: #6C63FF;
+}
+
+body .container .navbar .navbar-nav .nav-ul .nav-item:hover {
+  background-color: white;
+  color: #6C63FF;
+}
+
+body .container .navbar .navbar-nav .nav-ul .nav-item .nav-link {
+  color: white;
+}
+
+body .container .navbar .navbar-nav .nav-ul .nav-item .nav-link:hover {
+  background-color: white;
+  color: #6C63FF;
+}
+
+body .container .navbar .navbar-nav .nav-ul .nav-item:hover ~ .nav-link {
+  color: #6C63FF;
+}
+
+body .container .pricing .cards .card {
+  margin-bottom: 50px;
+}
+
+body .container .contact-wrapper .contact {
+  width: 350px;
+  padding: 5px 10px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 427px) {
+  :root {
+    font-size: 9px;
+  }
+  body .container .services .cards .card {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  body .container .navbar .logo {
+    font-size: 2.4rem;
+  }
+  body .container .main main .heading {
+    font-size: 1.3rem;
+  }
+  body .container .main main button {
+    font-size: 1.3rem;
+    padding: 5px 0;
+  }
+  body .container .services .cards .card {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  body .container .navbar {
+    padding: 0 20px;
+  }
+  body .container .main main button span {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  body .container .contact {
+    font-size: .9rem;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  body .container .services .cards .card {
+    width: 250px;
+  }
+  body .container .pricing .cards .card {
+    width: 250px;
+  }
+}
+/*# sourceMappingURL=phone.css.map */

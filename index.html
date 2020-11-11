@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Academy</title>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 650px)" href="css/phone.css">
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="css/phone900.css">
+
+    <!-- js -->
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="navbar">
+            <a name="home"></a>
+            <h1 class="logo">
+                wda
+            </h1>
+            <nav class="navbar-nav">
+                <ul class="nav-ul">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </header>
+
+        <div class="main">
+            <img src="./img/main.svg">
+            <main>
+                <div class="heading">
+                    <h1>
+                        Web Development Academy
+                    </h1>
+                    <h5>
+                        Become a master of HTML , CSS and JavaScript
+                    </h5>
+                </div>
+
+                <button class="btn" id="btn">
+                    <span>Book a Free trial class now</span>
+                </button>
+            </main>
+        </div>
+
+        <section class="services">
+            <a name="services"></a>
+            <h1>
+                Services
+            </h1>
+            <div class="cards">
+                <div class="card" id="card1">
+                    <img src="./svgs/education.svg">
+
+                    <h2>
+                        Learn from the Experts
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam illum porro dolorem quo, ab
+                        ipsa
+                        sit
+                        minus cumque quam nemo eius. Ut autem quae, aliquam alias quibusdam delectus voluptatem
+                        omnis,
+                        cumque dolore, similique ab eveniet incidunt a doloremque quaerat id totam. Perferendis
+                        aperiam
+                        consequuntur obcaecati. Quibusdam aut delectus aspernatur veritatis!
+                    </p>
+                </div>
+                <div class="card" id="card2">
+                    <img src="./svgs/idea.svg">
+                    <h2>
+                        Practice and revise
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam illum porro dolorem quo, ab
+                        ipsa
+                        sit
+                        minus cumque quam nemo eius. Ut autem quae, aliquam alias quibusdam delectus voluptatem
+                        omnis,
+                        cumque dolore, similique ab eveniet incidunt a doloremque quaerat id totam. Perferendis
+                        aperiam
+                        consequuntur obcaecati. Quibusdam aut delectus aspernatur veritatis!
+                    </p>
+                </div>
+                <div class="card" id="card3">
+                    <img src="./svgs/reading-book.svg">
+                    <h2>
+                        Learn anytime, anywhere
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam illum porro dolorem quo, ab
+                        ipsa
+                        sit
+                        minus cumque quam nemo eius. Ut autem quae, aliquam alias quibusdam delectus voluptatem
+                        omnis,
+                        cumque dolore, similique ab eveniet incidunt a doloremque quaerat id totam. Perferendis
+                        aperiam
+                        consequuntur obcaecati. Quibusdam aut delectus aspernatur veritatis!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing">
+            <a name="pricing"></a>
+            <h1>
+                Pricing
+            </h1>
+            <div class="cards">
+                <div class="card" id="card1">
+                    <h4>Start</h4>
+                    <h2>$38</h2><span>/mo</span>
+
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                    <button>Buy Now</button>
+                </div>
+                <div class="card" id="card2">
+                    <h4>Mid range</h4>
+                    <h2>$65</h2><span>/mo</span>
+
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                    <button>Buy Now</button>
+                </div>
+                <div class="card" id="card3">
+                    <h4>Pro</h4>
+                    <h2>$80</h2><span>/mo</span>
+
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="contact-wrapper">
+            <a name="contact"></a>
+            <div class="contact">
+                <h1>Contact Us</h1>
+                <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+
+                <form id="form" name="form">
+                    <div class="details">
+                        <input type="text" name="name" id="name" placeholder="Name" autocomplete="off">
+                        <input type="text" name="email" id="email" placeholder="E-Mail" autocomplete="off">
+                    </div>
+
+                    <textarea name="msg" id="msg" placeholder="Type your message here"></textarea>
+
+                    <button type="submit" id="submitBtn">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <h1 class="copyright">Made by-: Naman Arora</h1>
+
+            <div class="credits">
+                <p>Icons made by <a href="https://www.flaticon.com/authors/geotatah" title="geotatah">geotatah</a> from
+                    <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+
+                <p>Icons made by <a href="https://www.flaticon.com/authors/pongsakornred"
+                        title="pongsakornRed">pongsakornRed</a> from <a href="https://www.flaticon.com/"
+                        title="Flaticon"> www.flaticon.com</a></p>
+
+                <p>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+                        href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

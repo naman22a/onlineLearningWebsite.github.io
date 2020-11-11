@@ -1,0 +1,212 @@
+$primaryColor: #6C63FF;
+
+// Genral
+body {
+    .container {
+        .navbar {
+            .hamburger {
+                position: relative;
+                top: 20px;
+                margin-left: auto;
+                transition: all ease 1s;
+                cursor: pointer;
+
+                .line {
+                    height: 2.5px;
+                    width: 30px;
+                    background-color: $primaryColor;
+                    border-radius: 3px;
+                    margin: 5px 0;
+                    transform: scale(1.2);
+                }
+            }
+
+            .navbar-nav {
+                position: absolute;
+                top: 215px;
+                left: -100%;
+                display: flex;
+                height: calc(100% - 100px);
+                width: 100%;
+                background-color: $primaryColor;
+                z-index: 2;
+                transition: all ease 1s;
+
+                .nav-ul {
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    flex-direction: column;
+
+                    .nav-item {
+                        height: auto;
+                        width: 100%;
+                        padding: 0;
+                        transition: all ease .1s;
+                        transition: all ease .5s;
+                        cursor: pointer;
+                        background-color: $primaryColor;
+
+
+                        &:hover {
+                            background-color: white;
+                            color: $primaryColor;
+                        }
+
+
+
+                        .nav-link {
+                            color: white;
+
+                            &:hover {
+                                background-color: white;
+                                color: $primaryColor;
+                            }
+                        }
+                    }
+
+                    .nav-item:hover~.nav-link {
+                        color: $primaryColor;
+                    }
+                }
+            }
+        }
+        
+        .pricing {
+            .cards {
+                .card {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+
+        .contact-wrapper {
+            .contact {
+                width: 350px;
+                padding: 5px 10px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+// L-size mobile
+@media only screen and (max-width: 427px) {
+    :root {
+        font-size: 9px;
+    }
+
+    body {
+        .container {
+            .services {
+                .cards {
+                    .card {
+                        width: 350px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// M-size mobile
+@media only screen and (max-width: 376px) {
+    body {
+        .container {
+            .navbar {
+                .logo {
+                    font-size: 2.4rem;
+                }
+            }
+
+            .main {
+                main {
+                    .heading {
+                        font-size: 1.3rem;
+                    }
+
+                    button {
+                        font-size: 1.3rem;
+                        // height: 50px;
+                        // width: 300px;
+                        padding: 5px 0;
+                    }
+                }
+
+
+            }
+
+            .services {
+                .cards {
+                    .card {
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    body {
+        .container {
+            .navbar{
+                padding: 0 20px;
+            }
+            .main {
+                main {
+                    button {
+                        span{
+                            transform: scale(.8);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// S-size mobile
+@media only screen and (max-width: 350px) {
+    body {
+        .container {
+            .main {
+                main {
+                    button {
+                        // width: 250px;
+                    }
+                }
+            }
+
+            .contact {
+                font-size: .9rem;
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 321px) {
+    body {
+        .container {
+            .services {
+                .cards {
+                    .card {
+                        width: 250px;
+                    }
+                }
+            }
+
+            .pricing {
+                .cards {
+                    .card {
+                        width: 250px;
+                    }
+                }
+            }
+
+        }
+    }
+}

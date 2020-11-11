@@ -1,0 +1,141 @@
+.contact-wrapper {
+    background: url('../img/contact.svg');
+    height: 100vh;
+    width: 100%;
+    display: flex;
+
+    .contact {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        border: 2px solid $primaryColor;
+        background-color: white;
+        border-radius: 5px;
+        width: 600px;
+        margin: 0 auto;
+        padding: 20px 40px;
+        margin-bottom: 40px;
+        transform: scale(0.9);
+        font-size: 1rem;
+        transition: .7s all ease;
+        padding-top: 40px;
+        opacity: .8;
+
+        &:hover {
+            border-width: 3px;
+        }
+
+        h1 {
+            font-size: 4.5em;
+            font-weight: 400;
+            font-family: Roboto;
+        }
+
+        h1+h5 {
+            font-size: 1em;
+            font-family: sans-serif;
+            color: #636e72;
+        }
+
+        form {
+            margin: 40px auto;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            input,
+            textarea {
+                border: 1px solid #636e72;
+            }
+
+            .details {
+                display: flex;
+                flex-direction: row;
+            }
+
+            #name {
+                margin-right: 10px;
+                margin-bottom: 20px;
+            }
+
+            #email {
+                margin-bottom: 20px;
+            }
+
+            input {
+                padding: 5px;
+                height: 40px;
+                width: 46%;
+                font-size: 1.5em;
+                border: 1px solid grey;
+                border-radius: 6px;
+                font-family: Montserrat;
+                margin: -5px 19px;
+            }
+
+            input:hover {
+                border-color: $primaryColor;
+                border-width: 2px;
+            }
+
+            textarea {
+                height: 200px;
+                width: 94%;
+                border: 1px solid grey;
+                border-radius: 6px;
+                margin: 0 auto;
+                margin-bottom: 20px;
+                font-size: 2em;
+                padding: 2px 4px;
+            }
+
+            textarea:hover {
+                border-color: $primaryColor;
+                border-width: 2px;
+            }
+
+            button {
+                display: block;
+                font-size: 14px;
+                color: $primaryColor;
+                position: relative;
+                height: 50px;
+                width: 94%;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-family: Montserrat;
+                border: 1.5px solid $primaryColor;
+                margin: 30px auto;
+                overflow: hidden;
+                transition: 1s all ease;
+                cursor: pointer;
+                background: none;
+                border-radius: 5px;
+
+                &:before {
+                    background-color: $primaryColor;
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    border-radius: 5px;
+                    z-index: -1;
+                    transition: .9s all ease;
+                    width: 100%;
+                    height: 0;
+                    transform: translate(-50%, -50%) rotate(45deg);
+                }
+
+                &:hover {
+                    color: white;
+                }
+
+                &:hover::before {
+                    height: 820%;
+                }
+            }
+        }
+    }
+}

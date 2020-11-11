@@ -1,0 +1,89 @@
+.pricing {
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 30px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid black;
+    margin-bottom: 40px;
+
+    h1 {
+        font-size: 5rem;
+        color: black;
+        margin: 10px 0;
+        font-family: Roboto;
+        font-weight: 400;
+        margin: 40px 0;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        text-align: center;
+
+        .card {
+            height: auto;
+            width: 270px;
+            border: 4px solid $primaryColor;
+            border-radius: 5px;
+            padding: 20px 35px;
+            font-size: 1.5rem;
+            margin: 10px;
+            box-shadow: 1px 1px 7px 1px #636363;
+            text-align: left;
+            transition: all ease .7s;
+
+            &:hover {
+                transform: translateY(-10px) scale(1.03);
+            }
+
+            h4 {
+                font-size: 1.5rem;
+                color: #636e72;
+            }
+
+            h2+span {
+                margin-left: 6px;
+                color: #636e72;
+            }
+
+            h2 {
+                font-size: 3rem;
+                margin-bottom: 20px;
+                display: inline-block;
+            }
+
+            ul li {
+                font-size: 1.7rem;
+                color: #2d3436;
+                list-style: none;
+                margin-bottom: 20px;
+            }
+
+            ul {
+                margin-bottom: 30px;
+            }
+
+            button {
+                padding: 14px 70px;
+                border: none;
+                background-color: #867ffc;
+                color: white;
+                border-radius: 5px;
+                box-shadow: 2px 2px 1px 1px black;
+                transition: all ease .4s;
+                font-size: 1.2rem;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $primaryColor;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}

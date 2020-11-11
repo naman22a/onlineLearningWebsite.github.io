@@ -1,0 +1,78 @@
+.main {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+
+    img {
+        height: 70vh;
+        width: 55%;
+    }
+
+    main {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 40px;
+
+        .heading {
+            margin-bottom: 10px;
+            font-size: 1.7rem;
+            text-align: center;
+            color: $primaryColor;
+            animation: head .4s .3s 1 both linear;
+
+            h1 {
+                font-family: Montserrat;
+                margin-bottom: 4px;
+            }
+        }
+
+        button {
+            display: block;
+            font-size: 14px;
+            color: $primaryColor;
+            position: relative;
+            height: 50px;
+            width: 400px;
+            padding: 10px 0;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: Montserrat;
+            border: 1.2px solid $primaryColor;
+            margin: 30px 0;
+            overflow: hidden;
+            transition: 1s all ease;
+            cursor: pointer;
+            background: none;
+            border-radius: 5px;
+
+            animation: btn .4s .33s 1 both linear;
+
+            &:before {
+                content: '';
+                background-color: $primaryColor;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 5px;
+                z-index: -1;
+                transition: 1s all ease;
+                width: 0;
+                height: 0;
+            }
+
+            &:hover {
+                color: white;
+            }
+
+            &:hover::before {
+                width: 120%;
+                height: 120%;
+            }
+        }
+    }
+}
