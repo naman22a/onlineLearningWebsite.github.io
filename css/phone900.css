@@ -31,7 +31,25 @@
           clip-path: polygon(0px 0px, 0px 230px, 55% 450px, 100% 230px, 100% 0px);
 }
 
-.main main .heading {
+.main main .main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  top: -30px;
+}
+
+.main main .main-container .heading {
   margin-bottom: 10px;
   font-size: 1.7rem;
   text-align: center;
@@ -40,17 +58,17 @@
           animation: head .4s .3s 1 both linear;
 }
 
-.main main .heading h1 {
+.main main .main-container .heading h1 {
   color: white;
   text-shadow: 2px 2px black;
   font-family: Montserrat;
 }
 
-.main main .heading h5 {
+.main main .main-container .heading h5 {
   color: white;
 }
 
-.main main button {
+.main main .main-container button {
   display: block;
   font-size: 14px;
   color: white;
@@ -73,7 +91,7 @@
           animation: btn .4s .33s 1 both linear;
 }
 
-.main main button span {
+.main main .main-container button span {
   color: white;
   border: 1px solid white;
   padding: 10px 30px;
@@ -82,12 +100,12 @@
   transition: .7s all ease;
 }
 
-.main main button span:hover {
+.main main .main-container button span:hover {
   background-color: white;
   color: #6C63FF;
 }
 
-.main main button:before {
+.main main .main-container button:before {
   background-color: white;
   content: '';
   position: absolute;
@@ -103,11 +121,11 @@
   height: 0;
 }
 
-.main main button:hover {
+.main main .main-container button:hover {
   color: #6c5ce7;
 }
 
-.main main button:hover::before {
+.main main .main-container button:hover::before {
   width: 100%;
   height: 100%;
 }
@@ -162,5 +180,9 @@
             transform: translateY(0);
     opacity: 1;
   }
+}
+
+body .container footer {
+  background-color: #5200c8;
 }
 /*# sourceMappingURL=phone900.css.map */

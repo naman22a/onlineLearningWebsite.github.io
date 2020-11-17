@@ -91,7 +91,19 @@ body {
         }
     }
 }
-
+@media only screen and (max-width: 466px) {
+    body{
+        .container{
+            .services{
+                .cards{
+                    .card{
+                        width: 364px;
+                    }
+                }
+            }
+        }
+    }
+}
 // L-size mobile
 @media only screen and (max-width: 427px) {
     :root {

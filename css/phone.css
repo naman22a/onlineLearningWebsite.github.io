@@ -88,6 +88,12 @@ body .container .contact-wrapper .contact {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 466px) {
+  body .container .services .cards .card {
+    width: 364px;
+  }
+}
+
 @media only screen and (max-width: 427px) {
   :root {
     font-size: 9px;

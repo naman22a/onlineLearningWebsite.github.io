@@ -27,80 +27,89 @@ $primaryColor: #6C63FF;
                 100% 230px,
                 100% 0px);
 
-        .heading {
-            margin-bottom: 10px;
-            font-size: 1.7rem;
-            text-align: center;
-            color: white;
-            animation: head .4s .3s 1 both linear;
-
-            h1 {
-                color: white;
-                text-shadow: 2px 2px black;
-                font-family: Montserrat;
-            }
-
-            h5 {
-                color: white;
-            }
-        }
-
-        button {
-            display: block;
-            font-size: 14px;
-            color: white;
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             position: relative;
-            height: 50px;
-            width: 400px;
-            padding: 10px 0;
-            text-transform: uppercase;
-            text-decoration: none;
-            font-family: Montserrat;
-            border: 1.2px solid white;
-            margin: 30px 0;
-            overflow: hidden;
-            transition: 1s all ease;
-            cursor: pointer;
-            background: none;
-            border-radius: 5px;
+            top: -30px;
 
-            animation: btn .4s .33s 1 both linear;
-
-            span {
+            .heading {
+                margin-bottom: 10px;
+                font-size: 1.7rem;
+                text-align: center;
                 color: white;
-                border: 1px solid white;
-                padding: 10px 30px;
-                border-radius: 5px;
-                transition: .7s all ease;
+                animation: head .4s .3s 1 both linear;
 
-                &:hover{
-                    background-color: white;
-                    color: $primaryColor;
+                h1 {
+                    color: white;
+                    text-shadow: 2px 2px black;
+                    font-family: Montserrat;
+                }
+
+                h5 {
+                    color: white;
                 }
             }
 
-
-            &:before {
-                background-color: white;
-                content: '';
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+            button {
+                display: block;
+                font-size: 14px;
+                color: white;
+                position: relative;
+                height: 50px;
+                width: 400px;
+                padding: 10px 0;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-family: Montserrat;
+                border: 1.2px solid white;
+                margin: 30px 0;
+                overflow: hidden;
+                transition: 1s all ease;
+                cursor: pointer;
+                background: none;
                 border-radius: 5px;
-                z-index: -1;
-                transition: .9s all ease;
-                width: 0;
-                height: 0;
-            }
 
-            &:hover {
-                color: #6c5ce7;
-            }
+                animation: btn .4s .33s 1 both linear;
 
-            &:hover::before {
-                width: 100%;
-                height: 100%;
+                span {
+                    color: white;
+                    border: 1px solid white;
+                    padding: 10px 30px;
+                    border-radius: 5px;
+                    transition: .7s all ease;
+
+                    &:hover {
+                        background-color: white;
+                        color: $primaryColor;
+                    }
+                }
+
+
+                &:before {
+                    background-color: white;
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    border-radius: 5px;
+                    z-index: -1;
+                    transition: .9s all ease;
+                    width: 0;
+                    height: 0;
+                }
+
+                &:hover {
+                    color: #6c5ce7;
+                }
+
+                &:hover::before {
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
     }
@@ -128,4 +137,8 @@ $primaryColor: #6C63FF;
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+body .container footer {
+    background-color: #5200c8;
 }
