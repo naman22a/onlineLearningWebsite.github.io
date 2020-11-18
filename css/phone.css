@@ -88,6 +88,26 @@ body .container .contact-wrapper .contact {
   margin: 0 auto;
 }
 
+body .container .contact-wrapper .contact form .details {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+}
+
+body .container .contact-wrapper .contact form input {
+  padding: 5px;
+  height: 40px;
+  width: auto;
+  font-size: 1.5em;
+  border: 1px solid grey;
+  border-radius: 6px;
+  font-family: Montserrat;
+  margin: -5px 15px;
+  width: 94%;
+}
+
 @media only screen and (max-width: 466px) {
   body .container .services .cards .card {
     width: 364px;

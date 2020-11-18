@@ -73,7 +73,7 @@ body {
                 }
             }
         }
-        
+
         .pricing {
             .cards {
                 .card {
@@ -87,16 +87,36 @@ body {
                 width: 350px;
                 padding: 5px 10px;
                 margin: 0 auto;
+
+                form {
+                    .details {
+                        flex-direction: column;
+                        margin-bottom: 10px;
+                    }
+
+                    input {
+                        padding: 5px;
+                        height: 40px;
+                        width: auto;
+                        font-size: 1.5em;
+                        border: 1px solid grey;
+                        border-radius: 6px;
+                        font-family: Montserrat;
+                        margin: -5px 15px;
+                        width: 94%;
+                    }
+                }
             }
         }
     }
 }
+
 @media only screen and (max-width: 466px) {
-    body{
-        .container{
-            .services{
-                .cards{
-                    .card{
+    body {
+        .container {
+            .services {
+                .cards {
+                    .card {
                         width: 364px;
                     }
                 }
@@ -104,6 +124,7 @@ body {
         }
     }
 }
+
 // L-size mobile
 @media only screen and (max-width: 427px) {
     :root {
@@ -164,13 +185,14 @@ body {
 @media only screen and (max-width: 490px) {
     body {
         .container {
-            .navbar{
+            .navbar {
                 padding: 0 20px;
             }
+
             .main {
                 main {
                     button {
-                        span{
+                        span {
                             transform: scale(.8);
                         }
                     }
